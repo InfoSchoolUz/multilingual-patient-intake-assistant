@@ -1,128 +1,150 @@
-# 🏥 Multilingual Patient Intake Assistant
+🏥 Multilingual Patient Intake Assistant
 
-> **Agents Assemble: The Healthcare AI Endgame Hackathon**  
-> Built on [Prompt Opinion](https://promptopinion.ai) · Powered by Google Gemini
-
----
-
-## 🌍 Overview | Loyiha haqida
-
-**English:**  
-A multilingual AI-powered patient intake agent that collects health information through a guided conversational interface. The agent communicates fluently in both **Uzbek** and **English**, making healthcare more accessible for Central Asian patients who may not be comfortable in English-only systems.
-
-**O'zbek:**  
-Bu loyiha bemor ma'lumotlarini sun'iy intellekt yordamida to'playdigan ko'p tilli agent hisoblanadi. Agent **o'zbek** va **ingliz** tillarida bemorlar bilan muloqot qilib, tibbiy so'rovnomani avtomatik to'ldiradi va shifokor uchun strukturalashtirilgan hujjat yaratadi.
+«AI Intake Agent for Real Clinical Workflows
+Built on Prompt Opinion · Powered by Google Gemini»
 
 ---
 
-## 🎯 Problem | Muammo
+🔥 One-Line Pitch
 
-Millions of patients in Central Asia (Uzbekistan, Kazakhstan, Tajikistan) face a language barrier when interacting with digital healthcare systems built exclusively in English. This leads to:
-
-- Incomplete or inaccurate patient intake forms
-- Delayed diagnoses
-- Reduced trust in digital health tools
+An AI healthcare intake agent that conducts multilingual patient interviews and generates structured, doctor-ready summaries — not just a form, but a pre-visit workflow.
 
 ---
 
-## ✅ Solution | Yechim
+🌍 Overview
 
-**Multilingual Patient Intake Assistant** bridges this gap by:
+Multilingual Patient Intake Assistant is an AI agent that replaces traditional intake forms with a natural conversation.
 
-1. Greeting patients in their preferred language (Uzbek or English)
-2. Asking guided questions about symptoms, history, and medications
-3. Automatically filling out the **Patient Health Survey** form
-4. Generating a structured document ready for the physician
+Instead of filling static forms, patients simply talk.
 
----
+The agent:
 
-## 🚀 Demo | Namoyish
+- understands symptoms
+- asks follow-up questions
+- structures the data automatically
+- generates a clinical-ready intake summary
 
-The agent is deployed on the **Prompt Opinion** platform and can be accessed as a configured Survey/Form Completion Agent.
+Supports:
 
-**Sample conversation (O'zbek):**
-```
-User:  Assalomu alaykum, boshim og'riyapti va haroratim 38 daraja
-Agent: Va alaykum assalom. O'zingizni qanday his qilayotganingizdan afsusdaman.
-       Sizga yordam berish uchun, avval ism-familiyangizni bilsam bo'ladimi?
-User:  Azamat Yusupov
-Agent: Tushunarli, Azamat. Bu muammo bo'yicha avval shifokorga murojaat qildingizmi?
-...
-Agent: Barcha ma'lumotlarni so'rovnomaga kiritib qo'ydim. Hujjat yaratildi!
-```
-
-**Generated Output:**
-```markdown
-# Patient Health Survey
-1. Full name: Azamat Yusupov
-2. Age: ...
-3. Primary reason for visit: Headache and fever (38°C)
-4. Symptoms: Headache, high temperature
-5. Pain level (1-10): 4
-6. Duration: 3 days
-...
-```
+- 🇺🇿 Uzbek
+- 🇬🇧 English
 
 ---
 
-## 🛠️ How It Works | Qanday ishlaydi
+🎯 Problem
 
-```
+Healthcare intake today is:
+
+- repetitive
+- language-limited
+- often incomplete
+
+In Central Asia, many patients struggle with English-only systems, leading to:
+
+- poor intake quality
+- delays in diagnosis
+- frustration
+
+---
+
+✅ Solution
+
+This agent transforms intake into a guided AI conversation:
+
+1. Detects patient language (Uzbek / English)
+2. Conducts structured medical interview
+3. Adapts questions dynamically
+4. Extracts key clinical information
+5. Generates a structured intake report
+
+---
+
+🧠 What Makes It Different
+
+This is NOT a chatbot.
+
+This is a workflow agent:
+
+- 🧩 Context-aware questioning
+- 🌐 Multilingual understanding
+- 📄 Structured medical output
+- ⚡ Pre-visit automation
+
+---
+
+🚀 Demo Flow
+
+1. Patient starts conversation
+2. Agent asks symptoms, duration, history
+3. Follow-up questions adapt dynamically
+4. Intake summary is generated
+
+---
+
+📄 Example Output
+
+# Patient Intake Summary
+
+Patient ID: Patient-001  
+Primary complaint: Headache and fever (38°C)  
+Duration: 3 days  
+Pain level: 4/10  
+
+Symptoms:
+- Headache
+- Fever
+
+Notes for physician:
+Patient reports persistent fever with moderate headache.
+
+---
+
+🛠️ Architecture
+
 Patient (Uzbek/English)
         ↓
-Prompt Opinion Platform
+Prompt Opinion Agent
         ↓
-Survey/Form Completion Agent
+Gemini AI (reasoning + structuring)
         ↓
-Google Gemini AI (FREE TIER)
+Structured Intake Output
         ↓
-Structured Patient Health Survey (PDF/Markdown)
-        ↓
-Doctor receives complete intake document
-```
+Doctor-ready summary
 
 ---
 
-## 🧩 Tech Stack | Texnologiyalar
+🧩 Tech Stack
 
-| Component | Technology |
-|---|---|
-| AI Platform | [Prompt Opinion](https://promptopinion.ai) |
-| AI Model | Google Gemini (Free Tier) |
-| Protocol | A2A (Agent-to-Agent) |
-| Form Standard | Patient Health Survey (Public Form) |
-| Languages | Uzbek 🇺🇿 · English 🇬🇧 |
+- Prompt Opinion (Agent Platform)
+- Google Gemini API
+- A2A Protocol
+- Structured Medical Intake Schema
 
 ---
 
-## 📋 Features | Imkoniyatlar
+🔒 Safety
 
-- 🌐 **Bilingual** — Uzbek and English support
-- 💬 **Conversational** — Natural dialogue, not a cold form
-- 📄 **Auto-document** — Generates structured intake report
-- 🔒 **Privacy-aware** — No data stored outside the platform
-- 🏥 **Healthcare-ready** — Built on FHIR-compatible Prompt Opinion platform
-- ⚡ **No-code agent** — Configured entirely within Prompt Opinion
+- Uses synthetic / demo patient data only
+- No real patient data stored
+- Privacy-aware design
 
 ---
 
-## 🏆 Hackathon
+🏆 Hackathon
 
-- **Event:** [Agents Assemble: The Healthcare AI Endgame](https://agents-assemble.devpost.com)
-- **Category:** A2A Agent (Survey/Form Completion)
-- **Platform:** Prompt Opinion
-- **Deadline:** May 11, 2026
+Agents Assemble — Healthcare AI Endgame
+Track: A2A Agent
 
 ---
 
-## 👤 Author | Muallif
+💡 Impact
 
-**Azamat** — Computer Science Teacher & AI Developer  
-📍 Urgench, Uzbekistan  
-🏫 InfoSchoolUz
+- Reduces front-desk workload
+- Improves intake consistency
+- Enables multilingual healthcare access
 
 ---
 
-## 📄 License
+📄 License
 
-MIT License — free to use and adapt for educational and healthcare purposes.
+MIT License
